@@ -2,7 +2,7 @@ $(document).ready(function() {
 
     var sports = [
       "biking", "hiking", "swimming", "climbing", "shooting", "dancing", "partying", "running", "basketball", "fishing", "soccer", "baseball", "softball", "tennis", "pickleball",
-      "ping-pong"
+      "ping-pong", "jumping"
     ];
   
     // function to make buttons and add to page
