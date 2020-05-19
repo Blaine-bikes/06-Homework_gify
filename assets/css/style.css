@@ -3,11 +3,11 @@ body {
     background: #eee;
   }
   
-  #animals {
+  #sports {
     width: 70%;
   }
   
-  .animal-item {
+  .sport-item {
     float: left;
     padding: 10px;
   }
@@ -38,7 +38,7 @@ body {
     font-size: 18px;
     color: #fff;
     cursor: pointer;
-    background: #659a98;
+    background: #dd9b0c;
     border: 0;
     border-radius: 5px;
     box-shadow: 2px 2px 3px #bbb;

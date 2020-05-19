@@ -1,10 +1,8 @@
 $(document).ready(function() {
 
-    var animals = [
-      "dog", "cat", "rabbit", "hamster", "skunk", "goldfish",
-      "bird", "ferret", "turtle", "sugar glider", "chinchilla",
-      "hedgehog", "hermit crab", "gerbil", "pygmy goat", "chicken",
-      "capybara", "teacup pig", "serval", "salamander", "frog"
+    var sports = [
+      "biking", "hiking", "swimming", "climbing", "shooting", "dancing", "partying", "running", "basketball", "fishing", "soccer", "baseball", "softball", "tennis", "pickleball",
+      "ping-pong"
     ];
   
     // function to make buttons and add to page
@@ -22,7 +20,7 @@ $(document).ready(function() {
     }
   
     $(document).on("click", ".animal-button", function() {
-      $("#animals").empty();
+      $("#s").empty();
       $(".animal-button").removeClass("active");
       $(this).addClass("active");
   
@@ -56,7 +54,7 @@ $(document).ready(function() {
             animalDiv.append(p);
             animalDiv.append(animalImage);
   
-            $("#animals").append(animalDiv);
+            $("#sports").append(animalDiv);
           }
         });
     });
@@ -75,18 +73,18 @@ $(document).ready(function() {
       }
     });
   
-    $("#add-animal").on("click", function(event) {
+    $("#add-sport").on("click", function(event) {
       event.preventDefault();
       var newAnimal = $("input").eq(0).val();
   
       if (newAnimal.length > 2) {
-        animals.push(newAnimal);
+        sports.push(newAnimal);
       }
   
-      populateButtons(animals, "animal-button", "#animal-buttons");
+      populateButtons(sports, "animal-button", "#sports-buttons");
   
     });
   
-    populateButtons(animals, "animal-button", "#animal-buttons");
+    populateButtons(sports, "animal-button", "#sports-buttons");
   });
   
